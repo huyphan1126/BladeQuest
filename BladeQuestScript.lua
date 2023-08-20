@@ -10,9 +10,9 @@ wait(2)
 
 getgenv().BladeQuest = true
 local teleport_execute = queue_on_teleport or (fluxus and fluxus.queue_on_teleport) or (syn and syn.queue_on_teleport)
--- if teleport_execute then
---     teleport_execute("loadstring(game:HttpGet(''))()")
--- end
+if teleport_execute then
+    teleport_execute("loadstring(game:HttpGet('https://raw.githubusercontent.com/huyphan1126/BladeQuest/main/BladeQuestScript.lua'))()")
+end
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local player = game.Players.LocalPlayer
 local char = player.Character or player.CharacterAdded:Wait()
