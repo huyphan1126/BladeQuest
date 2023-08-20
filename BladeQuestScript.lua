@@ -12,7 +12,6 @@ getgenv().BladeQuest = true
 
 local teleport_execute = queue_on_teleport or (fluxus and fluxus.queue_on_teleport) or (syn and syn.queue_on_teleport)
 if teleport_execute then
-    print(1)
     teleport_execute("loadstring(game:HttpGet('https://raw.githubusercontent.com/huyphan1126/BladeQuest/main/BladeQuestScript.lua'))()")
 end
 
@@ -156,7 +155,7 @@ function CreateWallProtect()
 
     local Wall1 = Instance.new("Part")
     Wall1.Name = "Wall1"
-    Wall1.Size = Vector3.new(3, 20, 6)
+    Wall1.Size = Vector3.new(3, 6, 6)
     Wall1.Transparency = 1
     Wall1.Anchored = true
     Wall1.Parent = game.Workspace.ProtectPart
@@ -164,7 +163,7 @@ function CreateWallProtect()
 
     local Wall2 = Instance.new("Part")
     Wall2.Name = "Wall2"
-    Wall2.Size = Vector3.new(3, 20, 6)
+    Wall2.Size = Vector3.new(3, 6, 6)
     Wall2.Transparency = 1
     Wall2.Anchored = true
     Wall2.Parent = game.Workspace.ProtectPart
@@ -172,7 +171,7 @@ function CreateWallProtect()
 
     local Wall3 = Instance.new("Part")
     Wall3.Name = "Wall3"
-    Wall3.Size = Vector3.new(6, 20, 3)
+    Wall3.Size = Vector3.new(6, 6, 3)
     Wall3.Transparency = 1
     Wall3.Anchored = true
     Wall3.Parent = game.Workspace.ProtectPart
@@ -180,7 +179,7 @@ function CreateWallProtect()
 
     local Wall4 = Instance.new("Part")
     Wall4.Name = "Wall4"
-    Wall4.Size = Vector3.new(6, 20, 3)
+    Wall4.Size = Vector3.new(6, 6, 3)
     Wall4.Transparency = 1
     Wall4.Anchored = true
     Wall4.Parent = game.Workspace.ProtectPart
